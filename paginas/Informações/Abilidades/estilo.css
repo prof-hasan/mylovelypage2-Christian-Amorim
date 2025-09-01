@@ -4,7 +4,7 @@
 
 @font-face {
   font-family: 'Titulo';
-  src: url('../../fonte/Trajan Pro Regular.ttf Pro Regular.ttf') format('truetype');
+  src: url('../../../fonte/Trajan Pro Regular.ttf Pro Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -214,4 +214,5 @@ h1 {
 #Habilidades #H-sense {
   border: none;
   border-bottom-left-radius: 20px;
+
 }
