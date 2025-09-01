@@ -1,0 +1,22 @@
+@view-transition {
+  navigation: auto;
+}
+
+@font-face {
+    font-family: 'Titulo';
+    src: url('../../fonte/Trajan Pro Regular.ttf Pro Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html, body {
+    min-height: 100%;
+}
+
+body {
+    background-image: url(../../imgs/fundo.jpg_large);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
