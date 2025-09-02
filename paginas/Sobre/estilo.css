@@ -1,0 +1,125 @@
+@view-transition {
+  navigation: auto;
+}
+
+@font-face {
+  font-family: 'Titulo';
+  src: url('../../fonte/Trajan Pro Regular.ttf Pro Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html, body {
+  min-height: 100%;
+}
+
+
+
+body {
+  background-image: url(../../imgs/fundo.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: justify;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  padding: 5px;
+  border: solid 1px black;
+  height: 70px;
+  background-color: rgba(24, 24, 55, 0.797);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 18px;
+  width: 97.9%;
+}
+
+header ul {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  padding-left: 40px;
+}
+
+header a {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  transition-property: all;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+}
+
+a:hover {
+  text-shadow: #ffffff 1px 0 10px;
+  transform: scale(1.2);
+  transition-property: all;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+}
+
+main {
+  padding: 20px;
+  padding-top: 90px;
+  border: solid 1px black;
+  background-color: rgba(0, 0, 0, 0.797);
+  font-size: 18px;
+  width: 97%;
+  height: 99%;
+  color: white;
+  display: grid;
+  grid-template-rows: auto auto auto;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+p {
+  font-size: 20px;
+  width: 50%;
+}
+
+#Introducao {
+  grid-row: 1;
+}
+
+#Historia {
+  grid-row: 2;
+}
+
+#Porque {
+  grid-row: 3;
+}
+
+section {
+  border-bottom: #ffffff 3px solid;
+  padding: 15px;
+}
+
+section iframe {
+  float: right;
+  margin-right: 5%;
+  width: 35%;
+  height: calc(35vw * 0.5);
+}
+
+.carta {
+  width: 50%;
+  margin-left: 20%;
+  font-style: italic;
+  margin-bottom: 33px;
+  text-shadow: #ffffff 1px 0 5px;
+}
+
+.carta p {
+  font-size: 18px;
+}
+
+.carta .remetente {
+  text-align: end;
+}

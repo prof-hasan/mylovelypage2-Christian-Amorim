@@ -1,0 +1,169 @@
+@view-transition {
+  navigation: auto;
+}
+
+@font-face {
+    font-family: 'Titulo';
+    src: url('fonte/Trajan Pro Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html, body {
+    min-height: 100%;
+}
+
+body {
+    background-image: url(imgs/fundo-menu.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+
+
+#titulo {
+    margin: 30px
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    font-family: 'Titulo';
+    text-decoration: none;
+    font-size: 19px;
+    color: white;
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+    display: block;
+    padding: 20px;
+    width: 200px;
+}
+
+a:hover {
+    font-size: 22px;
+    text-shadow: #ffffff 1px 0 10px;
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+    border-radius: 100%;
+    transition: all 0.5s ease;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.164);
+    transition: all 0.5s ease;
+}
+
+footer {
+    bottom: 50px;
+    right: 60px;
+    display: flex;
+    text-align: center;
+    align-content: center;
+    justify-content: end;
+    gap: 30px;
+}
+
+#keyword-input {
+    margin-top: auto;
+    margin-bottom: auto;
+    height: 20px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.279);
+    max-width: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s ease;
+    overflow: hidden;
+}
+
+#keyword-input.visible {
+    margin-top: auto;
+    margin-bottom: auto;
+    height: 20px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.279);
+    max-width: 200px;
+    opacity: 1;
+    visibility: visible;
+}
+
+#keyword-input.visible {
+    margin-top: auto;
+    margin-bottom: auto;
+    height: 20px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.279);
+    max-width: 200px;
+    opacity: 1;
+    visibility: visible;
+}
+
+#keyword-input.visible:visited {
+    margin-top: auto;
+    margin-bottom: auto;
+    height: 20px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.279);
+    max-width: 200px;
+    opacity: 1;
+    visibility: visible;
+}
+
+#video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    display: none;
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+#youtube-player {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1001;
+    transition: all 0.3s;
+}
+
+.close-btn:hover {
+    background-color: rgba(200, 0, 0, 0.7);
+    transform: scale(1.1);
+}
+

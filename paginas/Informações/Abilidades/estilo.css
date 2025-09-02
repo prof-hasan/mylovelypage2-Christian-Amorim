@@ -1,0 +1,218 @@
+@view-transition {
+  navigation: auto;
+}
+
+@font-face {
+  font-family: 'Titulo';
+  src: url('../../../fonte/Trajan Pro Regular.ttf Pro Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html, body {
+  min-height: 100%;
+}
+
+
+
+body {
+  background-image: url(../../../imgs/fundo.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: justify;
+}
+
+main {
+  background-color: rgba(0, 0, 0, 0.847);
+  width: 98.5%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.fundo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 1;
+}
+
+#fundo2 {
+  position: relative;
+  top: -170px;
+  right: 4px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 19px;
+  color: white;
+  transition-property: all;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+  margin-bottom: 30px;
+}
+
+a:hover {
+  font-size: 22px;
+  text-shadow: #ffffff 1px 0 10px;
+  transition-property: all;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+}
+
+.conteiner {
+  background-color: rgba(0, 0, 0, 0.899);
+  width: 690px;
+  height: 600px; 
+  border-radius: 20px ;
+  position: relative;
+  top: -90px;
+  right: 4px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-row: 1fr;
+  overflow: hidden;
+}
+
+#Informacoes article {
+  color: white;
+}
+
+#Informacoes {
+  padding: 5px;
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+}
+
+#Informacoes article {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  display: none;
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  overflow-y: auto;
+}
+
+#Informacoes article::-webkit-scrollbar {
+  width: 8px;
+}
+
+#Informacoes article::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+#Informacoes article::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+}
+
+#Informacoes article::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+h1 {
+  text-align: center;
+  font-size: 22px;
+  text-shadow: #ffffff 1px 0 10px;
+}
+
+#Habilidades {
+  padding: 5px;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  overflow-y: auto;
+  z-index: 2;
+}
+
+#Habilidades article {
+  height: 25%;
+  width: 100%;
+  border-bottom: solid white 1px; 
+  text-align: center;
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#Habilidades article:hover {
+  cursor: pointer;
+  background-color: rgb(51, 50, 50);
+  text-shadow: #ffffff 1px 0 10px;
+  transition: all 0.5s ease;
+}
+
+#Habilidades h3 {
+  font-size: larger;
+  color: white;
+  grid-column: 2 / 3;
+}
+
+#Habilidades article img {
+  float: left;
+  grid-column: 1 / 2;
+}
+
+#Habilidades::-webkit-scrollbar {
+  width: 8px;
+}
+
+#Habilidades::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+#Habilidades::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+}
+
+#Habilidades::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+#Habilidades img {
+  margin-left: 10px;
+}
+
+#H-dash {
+  border-top-left-radius: 20px;
+}
+
+#Informacoes img {
+  display: block;
+  margin: auto;
+}
+
+#I-sonhos {
+  background-color: white;
+}
+
+#I-sonhos_despertados img, #I-sonhos img {
+  margin-left: auto;
+  margin-right: 48px;
+}
+
+#I-sonhos p {
+  color: black;
+}
+
+#Habilidades #H-sense {
+  border: none;
+  border-bottom-left-radius: 20px;
+
+}
